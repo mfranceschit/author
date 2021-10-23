@@ -57,12 +57,6 @@
 </template>
 
 <style>
-html,
-body {
-  background-color: #c4bec6;
-  display: border-box;
-}
-
 .container {
   z-index: 1;
   perspective: 3000px;

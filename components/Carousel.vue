@@ -6,9 +6,13 @@
     :height="600"
     :perspective="0"
   >
-    <slide :index="0"> <HardCoverBook /> </slide>
-    <slide :index="1"><HardCoverBook /> </slide>
-    <slide :index="2"> <HardCoverBook /> </slide>
+    <slide :index="0">
+      <NuxtLink to="/read/the-boy-must-die">
+        <Book />
+      </NuxtLink>
+    </slide>
+    <slide :index="1"><Book /> </slide>
+    <slide :index="2"> <Book /> </slide>
   </carousel-3d>
 </template>
 
