@@ -3,6 +3,8 @@
     <div class="book">
       <div class="front">
         <div class="cover">
+          <h2>{{ book.title }}</h2>
+
           <figure>
             <img :src="book.cover" :alt="book.title + ' Cover'" />
           </figure>
@@ -13,10 +15,10 @@
         </div>
       </div>
       <div class="left-side">
-        <h2>
+        <h3>
           <span>{{ book.author }}</span>
           <span>{{ book.title }}</span>
-        </h2>
+        </h3>
       </div>
     </div>
   </div>
@@ -176,6 +178,11 @@ export default {
 }
 
 .container h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+.container h3 {
   width: 500px;
   height: 40px;
   color: #2b2b2b;
@@ -195,13 +202,13 @@ export default {
   background: linear-gradient(45deg, #dad5dc 0%, #f2ebf4 100%);
 }
 
-.left-side h2 span:first-child {
+.left-side h3 span:first-child {
   font-weight: 400;
   font-size: 13px;
   padding-right: 20px;
 }
 
-.left-side h2 span:last-child {
+.left-side h3 span:last-child {
   font-family: acumin-pro, sans-serif;
 }
 </style>

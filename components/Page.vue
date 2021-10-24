@@ -50,12 +50,18 @@ export default {
   max-width: 600px;
   min-height: 850px;
   margin: 1em;
-  padding: 1em;
+  padding: 1em 2em;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-family: 'Helvetica';
 }
 
 .page h1 {
   text-align: center;
+  font-size: 32px;
+  font-style: italic;
+}
+
+.page figure {
+  margin: 0 0 1rem;
 }
 </style>

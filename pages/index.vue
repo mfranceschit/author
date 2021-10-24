@@ -12,6 +12,17 @@ export default Vue.extend({})
 </script>
 
 <style>
+@font-face {
+  font-family: 'Parisienne';
+  src: url('../assets/fonts/Parisienne/Parisienne-Regular.ttf');
+}
+
+.html,
+body {
+  background-color: #c4bec6;
+  display: border-box;
+}
+
 .layout {
   display: flex;
   height: 100vh;
@@ -20,9 +31,8 @@ export default Vue.extend({})
   flex-direction: column;
 }
 
-.html,
-body {
-  background-color: #c4bec6;
-  display: border-box;
+.layout h1 {
+  font-family: 'Parisienne';
+  font-size: 48px;
 }
 </style>
