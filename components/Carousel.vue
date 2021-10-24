@@ -6,23 +6,28 @@
     :height="600"
     :perspective="0"
   >
-    <slide :index="0">
-      <NuxtLink to="/read/the-boy-must-die">
-        <Book />
+    <slide v-for="(book, index) in books" :key="index" :index="index">
+      <NuxtLink :to="{ path: `${book.category}/${book.slug}` }">
+        <Book :book="book" />
       </NuxtLink>
     </slide>
-    <slide :index="1"><Book /> </slide>
-    <slide :index="2"> <Book /> </slide>
   </carousel-3d>
 </template>
 
 <script>
 import { Carousel3d, Slide } from 'vue-carousel-3d'
+import { books } from '../store'
+console.log(books)
 
 export default {
   components: {
     Carousel3d,
     Slide,
+  },
+  data: () => {
+    return {
+      books,
+    }
   },
 }
 </script>
