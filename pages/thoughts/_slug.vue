@@ -8,7 +8,7 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('stories', params.slug).fetch()
+    const article = await $content('thoughts', params.slug).fetch()
 
     return { article }
   },

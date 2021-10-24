@@ -1,5 +1,6 @@
 <template>
   <main class="layout">
+    <h1>Marco's Writings</h1>
     <Carousel />
   </main>
 </template>
@@ -15,6 +16,8 @@ export default Vue.extend({})
   display: flex;
   height: 100vh;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .html,
