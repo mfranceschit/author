@@ -17,18 +17,16 @@ export default Vue.extend({})
   src: url('../assets/fonts/Parisienne/Parisienne-Regular.ttf');
 }
 
-.html,
-body {
-  background-color: #c4bec6;
-  display: border-box;
-}
-
 .layout {
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+body {
+  background: url('~assets/images/white_wall.png');
 }
 
 .layout h1 {

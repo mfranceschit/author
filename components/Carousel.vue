@@ -17,7 +17,6 @@
 <script>
 import { Carousel3d, Slide } from 'vue-carousel-3d'
 import { books } from '../store'
-console.log(books)
 
 export default {
   components: {

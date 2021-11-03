@@ -2,19 +2,21 @@
   <div class="container">
     <div class="book">
       <div class="front">
-        <div class="cover">
-          <h2>{{ book.title }}</h2>
+        <div
+          class="cover"
+          :class="[book.category === 'stories' ? 'story-book' : 'thought-book']"
+        >
+          <section class="title">
+            <h2>{{ book.title }}</h2>
+          </section>
 
-          <figure>
-            <img :src="book.cover" :alt="book.title + ' Cover'" />
-          </figure>
-          <p class="num-up"></p>
-
-          <p class="num-down">{{ book.title }}</p>
           <p class="author">{{ book.author }}</p>
         </div>
       </div>
-      <div class="left-side">
+      <div
+        class="left-side"
+        :class="[book.category === 'stories' ? 'story-book' : 'thought-book']"
+      >
         <h3>
           <span>{{ book.author }}</span>
           <span>{{ book.title }}</span>
@@ -103,7 +105,6 @@ export default {
   width: 40px;
   left: -20px;
   height: 550px;
-  background-color: rgba(232, 229, 234);
   -webkit-transform: rotate3d(0, 1, 0, -90deg);
   -moz-transform: rotate3d(0, 1, 0, -90deg);
   transform: rotate3d(0, 1, 0, -90deg);
@@ -144,11 +145,12 @@ export default {
 }
 
 .author {
+  color: white;
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   position: absolute;
   top: 475px;
-  left: 50px;
+  right: 50px;
   opacity: 0.8;
 }
 
@@ -185,7 +187,7 @@ export default {
 .container h3 {
   width: 500px;
   height: 40px;
-  color: #2b2b2b;
+  color: #fff;
   font-size: 15px;
   line-height: 40px;
   padding-right: 10px;
@@ -198,8 +200,43 @@ export default {
   transform: rotate(90deg) translateY(-40px);
 }
 
-.cover {
-  background: linear-gradient(45deg, #dad5dc 0%, #f2ebf4 100%);
+.cover,
+.left-side {
+  background-image: url('~assets/images/leather.png');
+}
+
+.cover .title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  font-family: 'Parisienne';
+}
+
+.title h2 {
+  background: linear-gradient(
+    to right,
+    #cfc09f 22%,
+    #634f2c 24%,
+    #cfc09f 26%,
+    #cfc09f 27%,
+    #ffecb3 40%,
+    #cfc09f 78%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+}
+
+.thought-book {
+  background-color: #000000;
+  color: #c0c0c0;
+}
+
+.story-book {
+  background-color: #ba0000;
+  color: #ffd700;
 }
 
 .left-side h3 span:first-child {
