@@ -15,4 +15,12 @@ export const books = [
     cover:
       'https://i.pinimg.com/736x/01/45/e1/0145e11ade439ae916b58a02b4395214.jpg',
   },
+  {
+    author: 'Marco Franceschi',
+    category: 'stories',
+    title: 'El Pulgar de Dios',
+    slug: 'el-pulgar-de-dios',
+    cover:
+      'https://i.pinimg.com/736x/01/45/e1/0145e11ade439ae916b58a02b4395214.jpg',
+  },
 ]
