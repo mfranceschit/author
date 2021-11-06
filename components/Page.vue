@@ -1,5 +1,8 @@
 <template>
-  <article class="page">
+  <article
+    class="page"
+    :class="[article.category === 'stories' ? 'story' : 'thought']"
+  >
     <h1>{{ article.title }}</h1>
     <figure>
       <img class="cover-image" :src="article.img" :alt="article.alt" />
@@ -15,6 +18,7 @@ export default {
       title: String,
       img: String,
       alt: String,
+      category: String,
     },
   },
 }
@@ -27,14 +31,32 @@ export default {
 
 .nuxt-content h2 {
   font-weight: bold;
+  font-family: 'Parisienne';
+
   font-size: 28px;
 }
 .nuxt-content h3 {
   font-weight: bold;
+  font-family: 'Parisienne';
+
   font-size: 22px;
 }
 .nuxt-content p {
+  font-family: 'ZenOldMinchoRegular';
   margin-bottom: 20px;
+}
+
+.page.story .nuxt-content p:first-child::first-letter {
+  font-family: 'Parisienne';
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.page.story .nuxt-content p:last-child {
+  text-align: center;
+  font-family: 'Parisienne';
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .page-container {
@@ -57,8 +79,8 @@ export default {
 
 .page h1 {
   text-align: center;
-  font-size: 32px;
-  font-style: italic;
+  font-size: 3em;
+  font-family: 'Parisienne';
 }
 
 .page figure {

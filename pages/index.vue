@@ -17,6 +17,21 @@ export default Vue.extend({})
   src: url('../assets/fonts/Parisienne/Parisienne-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'ZenOldMinchoRegular';
+  src: url('../assets/fonts/Zen_Old_Mincho/ZenOldMincho-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ZenOldMinchoBlack';
+  src: url('../assets/fonts/Zen_Old_Mincho/ZenOldMincho-Black.ttf');
+}
+
+@font-face {
+  font-family: 'ZenOldMinchoBlackBold';
+  src: url('../assets/fonts/Zen_Old_Mincho/ZenOldMincho-Bold.ttf');
+}
+
 .layout {
   display: flex;
   height: 100vh;
@@ -31,6 +46,12 @@ body {
 
 .layout h1 {
   font-family: 'Parisienne';
-  font-size: 48px;
+  font-size: 4em;
+}
+
+@media screen and (max-width: 768px) {
+  .layout h1 {
+    display: none;
+  }
 }
 </style>

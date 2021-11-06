@@ -1,7 +1,6 @@
 ---
 title: 'Muro de silencio'
-img: 'http://ipaintingsforsale.com/UploadPic/Mark%20Spain/big/Flamenco%20II.jpg'
-alt: 'Muro de silencio Cover'
+category: 'thoughts'
 ---
 
 Un muro de silencio se encuentra entre nosotros. 
