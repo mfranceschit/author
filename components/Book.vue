@@ -110,15 +110,6 @@ export default {
   transform: rotate3d(0, 1, 0, -90deg);
 }
 
-.cover svg {
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  margin-top: -100px;
-  margin-left: -110px;
-  width: 300px;
-}
-
 .cover > figure {
   height: 400px;
   overflow: hidden;
@@ -168,7 +159,7 @@ export default {
   width: 1px;
 }
 
-.container .cover:after {
+.container .book .cover:after {
   content: '';
   position: absolute;
   top: 0;
@@ -179,17 +170,31 @@ export default {
   box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
 }
 
-.container h2 {
+.container .book h2 {
   text-align: center;
   font-style: italic;
 }
 
-.container h3 {
+.container .book h3 {
   width: 500px;
   height: 40px;
   color: #fff;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 40px;
+  padding-right: 10px;
+  text-align: right;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(90deg) translateY(-40px);
+  -moz-transform: rotate(90deg) translateY(-40px);
+  transform: rotate(90deg) translateY(-40px);
+}
+
+.container .book-spine h3 {
+  width: 500px;
+  height: 40px;
+  color: #fff;
   padding-right: 10px;
   text-align: right;
   -webkit-transform-origin: 0 0;
