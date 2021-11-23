@@ -1,0 +1,14 @@
+{
+  "/stories/el-pulgar-de-dios": {
+    "to": "/stories/el-pulgar-de-dios/index.html",
+    "statusCode": 301
+  },
+  "/stories/hacia-el-ocaso": {
+    "to": "/stories/hacia-el-ocaso/index.html",
+    "statusCode": 301
+  },
+  "/thoughts/muro-de-silencio": {
+    "to": "/thoughts/muro-de-silencio/index.html",
+    "statusCode": 301
+  }
+}
