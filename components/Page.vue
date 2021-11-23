@@ -25,6 +25,30 @@ export default {
 </script>
 
 <style>
+body {
+  background: url('~assets/images/white_wall.png');
+}
+
+@font-face {
+  font-family: 'Parisienne';
+  src: url('../assets/fonts/Parisienne/Parisienne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ZenOldMinchoRegular';
+  src: url('../assets/fonts/Zen_Old_Mincho/ZenOldMincho-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ZenOldMinchoBlack';
+  src: url('../assets/fonts/Zen_Old_Mincho/ZenOldMincho-Black.ttf');
+}
+
+@font-face {
+  font-family: 'ZenOldMinchoBlackBold';
+  src: url('../assets/fonts/Zen_Old_Mincho/ZenOldMincho-Bold.ttf');
+}
+
 .cover-image {
   width: 100%;
 }

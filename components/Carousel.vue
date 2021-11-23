@@ -1,45 +1,42 @@
 <template>
-  <carousel-3d
-    v-if="window.width >= 550"
-    :controls-visible="true"
-    :clickable="true"
-    :width="500"
-    :height="600"
-    :perspective="0"
-  >
-    <slide v-for="(book, index) in books" :key="index" :index="index">
-      <NuxtLink :to="{ path: `${book.category}/${book.slug}` }">
-        <Book :book="book" />
-      </NuxtLink>
-    </slide>
-  </carousel-3d>
-  <carousel-3d
-    v-else
-    :disable3d="true"
-    :controls-visible="true"
-    :clickable="true"
-    :width="100"
-    :space="105"
-    :height="600"
-    :perspective="0"
-  >
-    <slide v-for="(book, index) in books" :key="index" :index="index">
-      <NuxtLink :to="{ path: `${book.category}/${book.slug}` }">
-        <BookSpine :book="book" />
-      </NuxtLink>
-    </slide>
-  </carousel-3d>
+  <client-only>
+    <carousel-3d
+      v-if="window.width >= 550"
+      :controls-visible="true"
+      :clickable="true"
+      :width="500"
+      :height="600"
+      :perspective="0"
+    >
+      <slide v-for="(book, index) in books" :key="index" :index="index">
+        <NuxtLink :to="{ path: `${book.category}/${book.slug}` }">
+          <Book :book="book" />
+        </NuxtLink>
+      </slide>
+    </carousel-3d>
+    <carousel-3d
+      v-else
+      :disable3d="true"
+      :controls-visible="true"
+      :clickable="true"
+      :width="100"
+      :space="105"
+      :height="600"
+      :perspective="0"
+    >
+      <slide v-for="(book, index) in books" :key="index" :index="index">
+        <NuxtLink :to="{ path: `${book.category}/${book.slug}` }">
+          <BookSpine :book="book" />
+        </NuxtLink>
+      </slide>
+    </carousel-3d>
+  </client-only>
 </template>
 
 <script>
-import { Carousel3d, Slide } from 'vue-carousel-3d'
 import { books } from '../store'
 
 export default {
-  components: {
-    Carousel3d,
-    Slide,
-  },
   data: () => {
     return {
       books,

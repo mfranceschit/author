@@ -12,6 +12,11 @@ export default {
 
     return { article }
   },
+  head() {
+    return {
+      title: this.article.title,
+    }
+  },
   methods: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }

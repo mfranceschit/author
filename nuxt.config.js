@@ -1,10 +1,10 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  ssr: false,
+  ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'author',
+    title: "Marco's Writings",
     htmlAttrs: {
       lang: 'en',
     },
@@ -21,7 +21,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~plugins/vue-carousel-3d', ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -35,6 +35,16 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxt/content'],
+  generate: {
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const thoughts = await $content('thoughts').only(['path']).fetch()
+      const stories = await $content('stories').only(['path']).fetch()
+      const files = [...stories, ...thoughts]
+
+      return files.map(file => (file.path === '/index' ? '/' : file.path))
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

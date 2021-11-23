@@ -1,7 +1,9 @@
 <template>
   <main class="layout">
     <h1>Marco's Writings</h1>
-    <Carousel />
+    <client-only>
+      <Carousel />
+    </client-only>
   </main>
 </template>
 
