@@ -75,13 +75,26 @@ body {
   margin-bottom: 20px;
 }
 
-.page.story .nuxt-content p:first-child::first-letter {
-  font-family: 'Parisienne';
-  font-size: 2em;
-  font-weight: bold;
+.nuxt-content > blockquote {
+  padding: 5em 0;
 }
 
-.page.story .nuxt-content p:last-child {
+.nuxt-content > blockquote > p:first-child {
+  text-align: left;
+}
+
+.nuxt-content > blockquote > p {
+  font-family: 'Parisienne';
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.page.story .nuxt-content > p:first-of-type::first-letter {
+  font-family: 'Parisienne';
+  font-size: 2em;
+}
+
+.page.story .nuxt-content > p:last-child {
   text-align: center;
   font-family: 'Parisienne';
   font-size: 2em;
