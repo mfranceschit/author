@@ -1,6 +1,8 @@
 ---
 title: 'El Pulgar de Dios'
 category: 'stories'
+img: 'cover_el_pulgar_de_dios_firma.jpg'
+alt: 'El Pulgar de Dios Cover'
 ---
 
 **Dice la leyenda que Dios creó el mundo en 7 días.** En un principio cuando sólo cernía caos y tinieblas. Él trajo la luz llamándole día y a la tiniebla la nombró noche. El día segundo creó el firmamento que conocemos como cielo. Al tercer día engendró los mares, sembró plantas y semillas que dieron sus frutos a la tierra desnuda. El cuarto día creó el sol, la luna y las estrellas. El quinto día pobló los mares, cielos y tierra de seres distintas especies. Al sexto días nos moldeó bajo su imagen y semejanza. Justo antes de descansar el día séptimo descendió para ver su creación. Reposando suavemente su pulgar izquierdo sobre una formación montañosa en medio de una bella planicie, rodeada de una extensa vegetación, campos de rosas y un riachuelo que se extendía por kilómetros perdiéndose a la vista en el horizonte. Satisfecho con su hazaña regresó a los cielos para su merecido descanso.

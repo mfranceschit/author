@@ -5,7 +5,12 @@
   >
     <h1>{{ article.title }}</h1>
     <figure>
-      <img class="cover-image" :src="article.img" :alt="article.alt" />
+      <img
+        v-if="article.img"
+        class="cover-image"
+        :src="require(`~/assets/images/${article.img}`)"
+        :alt="article.alt"
+      />
     </figure>
     <nuxt-content :document="article" />
   </article>
