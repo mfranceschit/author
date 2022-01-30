@@ -18,5 +18,9 @@
   "/thoughts/la-nina": {
     "to": "/thoughts/la-nina/index.html",
     "statusCode": 301
+  },
+  "/thoughts/no-es": {
+    "to": "/thoughts/no-es/index.html",
+    "statusCode": 301
   }
 }

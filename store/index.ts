@@ -29,4 +29,10 @@ export const books = [
     title: 'La Niña',
     slug: 'la-nina',
   },
+  {
+    author: 'Marco Franceschi',
+    category: 'thoughts',
+    title: 'No, Es',
+    slug: 'no-es',
+  },
 ]
