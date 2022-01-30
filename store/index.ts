@@ -17,4 +17,10 @@ export const books = [
     title: 'Hacia el Ocaso',
     slug: 'hacia-el-ocaso',
   },
+  {
+    author: 'Marco Franceschi',
+    category: 'thoughts',
+    title: 'Amor incondicional',
+    slug: 'amor-incondicional',
+  },
 ]
