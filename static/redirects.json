@@ -14,5 +14,9 @@
   "/thoughts/amor-incondicional": {
     "to": "/thoughts/amor-incondicional/index.html",
     "statusCode": 301
+  },
+  "/thoughts/la-nina": {
+    "to": "/thoughts/la-nina/index.html",
+    "statusCode": 301
   }
 }
